@@ -13,6 +13,7 @@ public class Hen : MonoBehaviour
         if (collision.tag == "Egg"){
             score+=1;
             Destroy(collision.gameObject);
+            Debug.Log(collision.gameObject.transform.position.x);
         }
     }
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class Hen : MonoBehaviour
             
         }
         float currentXPos  = transform.position.x;
+        // Debug.Log(transform.position.x);
         currentXPos = Mathf.Clamp(currentXPos,-8f,8f);
         transform .position = new Vector3(currentXPos,transform.position.y,transform.position .z);    
     }
