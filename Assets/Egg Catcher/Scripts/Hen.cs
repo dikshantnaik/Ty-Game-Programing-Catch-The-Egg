@@ -6,6 +6,15 @@ public class Hen : MonoBehaviour
 {
     [SerializeField]
     int speed;
+      public int score = 0;
+    // Start is called before the first frame update
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if (collision.tag == "Egg"){
+            score+=1;
+            Destroy(collision.gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
