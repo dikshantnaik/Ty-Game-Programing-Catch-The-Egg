@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets/Egg Catcher/Scripts/Hen.cs" />
      <Compile Include="Assets/Egg Catcher/Scripts/GameManger.cs" />
+     <Compile Include="Assets/Egg Catcher/Scripts/Ground.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/dikshant/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
