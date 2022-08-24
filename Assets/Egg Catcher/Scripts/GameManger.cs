@@ -12,17 +12,13 @@ public class GameManger : MonoBehaviour
     public GameObject egg_prefab;
     public float startIn = 2;
     public int target_score = 10;
+
+      public GameObject[] hearts;
+    public int life;
     void Start()
     {
         InvokeRepeating("SpawnEgg",startIn,(float)EggSpawnSpeed);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     void SpawnEgg(){
         float tempPos = Random.Range(-8f,8f);
@@ -31,5 +27,25 @@ public class GameManger : MonoBehaviour
     }
     public void StopSpawning(){
         CancelInvoke();
+    }
+
+
+    //Heart System
+
+
+    public void takeDamage(int d){
+        life -= d;
+    }
+
+    private void Update() {
+        if(life<1){
+            Destroy(hearts[0].gameObject);
+        }
+        else if(life<2){
+            Destroy(hearts[1].gameObject);
+        }
+        else if(life<3){
+            Destroy(hearts[2].gameObject);
+        }
     }
 }
