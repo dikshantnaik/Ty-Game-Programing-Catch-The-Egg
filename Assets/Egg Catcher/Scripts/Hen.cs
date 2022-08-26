@@ -7,18 +7,18 @@ using UnityEngine.UI;
 public class Hen : MonoBehaviour
 {
     [SerializeField]
-    int speed;
+    public  int  speed;
 
     public GameManger game_manager;
-      public int score = 0;
-    public TMP_Text _title;
+      public  static int score = 0;
+    public TMP_Text _score;
     
     // Start is called before the first frame update
 
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.tag == "Egg"){
             score+=1;
-            _title.text = "Score : "+score.ToString();
+            _score.text = "Score : "+score.ToString();
             Destroy(collision.gameObject);
             Debug.Log(collision.gameObject.transform.position.x);
         }

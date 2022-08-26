@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Egg Catcher/Scenes/MainMenu.unity
     guid: c447bb1f8edf8b942b194219fbb774cb
   - enabled: 1
-    path: Assets/Egg Catcher/Scenes/Main.unity
+    path: Assets/Egg Catcher/Scenes/Level_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/MainMenu2.unity
     guid: 938234571eb4301eca009ea33c640950
+  - enabled: 1
+    path: Assets/Egg Catcher/Scenes/GameOverScreen.unity
+    guid: 9228ff10b5fce3fcd86a0c9f108307af
   m_configObjects: {}

@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManger : MonoBehaviour
 {
     [SerializeField]
-    int EggSpawnSpeed = 1;
+    int EggSpawnSpeed ;
     
 
     public Hen hen;
@@ -38,8 +38,10 @@ public class GameManger : MonoBehaviour
     }
 
     private void Update() {
+        //Checking Life 
         if(life<1){
             Destroy(hearts[0].gameObject);
+            SceneManager.LoadScene("GameOverScreen");
         }
         else if(life<2){
             Destroy(hearts[1].gameObject);

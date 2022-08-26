@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &93319340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7848794298938111870, guid: 220d238ec441fa02ca30f2365451ae01, type: 3}
+  m_PrefabInstance: {fileID: 1935687981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &178327139
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -91, y: -107.1}
+  m_AnchoredPosition: {x: -91, y: -107.100006}
   m_SizeDelta: {x: 102.20001, y: 54.26999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204564698
@@ -678,10 +683,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422e64b361d181f4d98c14ffa2a30a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 10
   game_manager: {fileID: 1225340249}
-  score: 0
-  _title: {fileID: 204564698}
+  _score: {fileID: 204564698}
+--- !u!1 &756140303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7848794298938111870, guid: 220d238ec441fa02ca30f2365451ae01, type: 3}
+  m_PrefabInstance: {fileID: 836082959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &836082959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -878,11 +887,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5156db8d20718d1c883e23df7f9e78b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EggSpawnSpeed: 4
+  EggSpawnSpeed: 2
   hen: {fileID: 636989303}
   egg_prefab: {fileID: 709227817886767897, guid: b936871b4a97f38859894313b2cab347, type: 3}
   startIn: 2
   target_score: 10
+  hearts:
+  - {fileID: 1888304892}
+  - {fileID: 756140303}
+  - {fileID: 93319340}
+  life: 3
 --- !u!4 &1225340250
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,6 +1037,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   egg_splash_pref: {fileID: 5057771613127241311, guid: 1a3c8056e1b2c8feea3ae10f2af60537, type: 3}
+  game_manager: {fileID: 1225340249}
+--- !u!1 &1888304892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7848794298938111870, guid: 220d238ec441fa02ca30f2365451ae01, type: 3}
+  m_PrefabInstance: {fileID: 357063795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1935687981
 PrefabInstance:
   m_ObjectHideFlags: 0
