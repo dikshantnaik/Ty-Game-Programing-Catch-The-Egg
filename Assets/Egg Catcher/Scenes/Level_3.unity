@@ -1028,7 +1028,7 @@ MonoBehaviour:
   hen: {fileID: 636989303}
   egg_prefab: {fileID: 709227817886767897, guid: b936871b4a97f38859894313b2cab347, type: 3}
   startIn: 2
-  target_score: 10
+  target_score: 20
   life: 3
   hearts:
   - {fileID: 1888304892}
