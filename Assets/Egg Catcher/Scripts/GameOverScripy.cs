@@ -13,6 +13,7 @@ public class GameOverScripy : MonoBehaviour
     {
         int score = Hen.score;
          _score.text = "Score : "+score.ToString();
+         Hen.score = 0;
     }
 
     // Update is called once per frame

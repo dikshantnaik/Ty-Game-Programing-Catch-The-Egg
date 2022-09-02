@@ -12,9 +12,9 @@ public class GameManger : MonoBehaviour
     public GameObject egg_prefab;
     public float startIn = 2;
     public int target_score = 10;
+    public int life;
 
       public GameObject[] hearts;
-    public int life;
     void Start()
     {
         InvokeRepeating("SpawnEgg",startIn,(float)EggSpawnSpeed);
@@ -42,6 +42,8 @@ public class GameManger : MonoBehaviour
         if(life<1){
             Destroy(hearts[0].gameObject);
             SceneManager.LoadScene("GameOverScreen");
+            
+
         }
         else if(life<2){
             Destroy(hearts[1].gameObject);
