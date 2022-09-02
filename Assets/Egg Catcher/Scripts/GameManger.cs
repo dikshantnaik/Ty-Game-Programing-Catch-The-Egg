@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManger : MonoBehaviour
 {
     [SerializeField]
-    int EggSpawnSpeed ;
+    float EggSpawnSpeed ;
     
 
     public Hen hen;
@@ -21,7 +21,7 @@ public class GameManger : MonoBehaviour
     }
 
     void SpawnEgg(){
-        float tempPos = Random.Range(-8f,8f);
+        float tempPos = Random.Range(-7f,7f);
         Instantiate(egg_prefab,new Vector3(tempPos,5.34f,0),Quaternion.identity);
 
     }
